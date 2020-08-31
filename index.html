@@ -7,6 +7,7 @@
       body {
         background-color: rgb(54,57,63);
         margin: 0;
+        
       }
       h1{
         color: gray;
@@ -20,10 +21,11 @@
         
       .mydiv {
         background-color: rgb(32,34,37);
-        position: absolute;
         top: 0px;
-        width: 100%;
-        padding: 10px;
+        width: calc(100vw - 10px);   
+        height: 115px;
+        padding-top: 10px;
+        padding-left: 10px;
       }
       .mydiv h2{
         color: white;
@@ -37,6 +39,19 @@
         animation-fill-mode: none;
         animation-iteration-count: infinite;
       }
+        
+        .sidebar {
+            background-color: rgb(32,34,37);
+            height: 85vh ;
+            width: 60px;
+            float: left;
+            position: relative;
+        }
+        
+        .content {
+            float: left;
+        }
+        
         @keyframes rainbow{
             100%{
                 color: red;
@@ -48,7 +63,7 @@
                 color: green;
             }
         }
-        
+            
       .mydiv img{
         float: left;
         border-radius: 50%;
@@ -71,18 +86,19 @@
             }
             100%{
                 transform: rotate3d(0,1,1, 360deg);   
-        }
-
+        }             
+        
     </style>
   </head>
   <body>
 
-    <h1>Bootstrap Test</h1>
     <div class="mydiv">
       <img src="Pictures/image.png" alt="Avatar">
       <h2>Welcome</h2>
-
     </div>
-
+      <div class="sidebar">random text
+      </div>
+      <div class="content"><h1>blah test</h1></div>
+      
   </body>
 </html>
